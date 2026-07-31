@@ -15,10 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Login co-branded (TheMindFactory + Qrema): Hanken Grotesk + Space Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-BgMvHDkB.js"></script>
+    <script type="module" crossorigin src="/assets/index-BoHEMkmu.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-Bxg-T73_.css">
   </head>
   <body class="h-full">
     <div id="root" class="h-full"></div>
+    <!-- Runtime feature overrides (window.__QREMA_FLAGS__). Classic blocking
+         script on purpose: it must run BEFORE the module bundle so featureFlags.js
+         resolves synchronously and the nav never flashes. Kept out of the bundle
+         (no hashed name) so it can be swapped on the VPS without a rebuild. -->
+    <script src="/features.js"></script>
   </body>
 </html>
