@@ -15,7 +15,7 @@
  *     'qrema-radar': false,      // force OFF (kill switch for a broken screen)
  *   }
  *
- * Known ids: qrema-visitas, qrema-radar, qrema-produccion. Anything else, or a
+ * Known ids: qrema-visitas, qrema-radar, qrema-ventas. Anything else, or a
  * value that is not a real boolean, is ignored and the baseline stands.
  *
  * On the VPS this path is served from a directory OUTSIDE the deployed dist, so
